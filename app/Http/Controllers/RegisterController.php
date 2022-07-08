@@ -49,9 +49,8 @@ class RegisterController extends Controller
         // //dd($request);
 
         $user = User::create(request(['name','email','password']));
-        // auth()->login($user);
-        // return redirect()->to('login');
-        return redirect()->route('login');
+        auth()->login($user);
+        return redirect('login');
     }
 
     /**
