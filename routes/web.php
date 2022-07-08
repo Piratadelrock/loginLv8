@@ -15,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/register', [RegisterController::class, 'index'])->name('register');
+Route::get('/register', [RegisterController::class, 'index'])->name('register.index');
 
 Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
+
+Route::get('/logout', [LoginController::class, 'destroy'])->name('login.destroy');
 
 Route::post('/login', [LoginController::class, 'store'])->name('login.store');
 Route::get('/login', [LoginController::class, 'create'])->name('login');

@@ -21,7 +21,7 @@
 
                         <div class="flex justify-between items-baseline">
                             <button class="m-2 bg-emerald-500 text-white py-2 px-6 rounded-lg">Login</button>
-                            <button class="m-2 bg-orange-600 text-white py-2 px-6 rounded-lg"><a href="{{ route('register') }}">Register user</a></button>
+                            <button class="m-2 bg-violet-600 text-white py-2 px-6 rounded-lg"><a href="{{ route('register.index') }}">Register user</a></button>
                             <a href="#" class="text-sm hover:underline">Forgot password?</a>
                         </div>
                     </div>

@@ -20,7 +20,7 @@
                                         <input type="password" name="password" placeholder="Password"
                                             class=" border w-full h-5 px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-1 focus:ring-indigo-600 rounded-md">
                                         <div class="flex justify-between items-baseline">
-                                            <button type="submit"
+                                            <button
                                                 class="m-2 bg-violet-600 text-white py-2 px-6 rounded-lg">Register</button>
                                             <button class="m-2 bg-emerald-500 text-white py-2 px-6 rounded-lg"><a
                                                     href="{{ route('login') }}">Login</a></button>
