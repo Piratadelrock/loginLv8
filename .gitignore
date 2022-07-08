@@ -1,0 +1,14 @@
+/public/hot
+/public/storage
+/public/vendor
+/storage/*.key
+/vendor
+.env
+Homestead.json
+Homestead.yaml
+launch.json
+.DS_Store
+
+.idea
+/.idea
+*.cache
