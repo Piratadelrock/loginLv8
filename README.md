@@ -1,4 +1,5 @@
 # README #
+app laravel 8 con tailwind creando login
 
 This README would normally document whatever steps are necessary to get your application up and running.
 
