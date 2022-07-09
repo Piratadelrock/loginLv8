@@ -11,22 +11,33 @@
                     <div class="h-2 bg-violet-600 rounded-t-md"></div>
                     <div class="py-6 px-8">
                         <label class="block font-semibold">Name<label>
-                            <input type="text" name="name" placeholder="name"
-                                class=" border w-full h-5 px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-1 focus:ring-indigo-600 rounded-md">
-                        <label class="block font-semibold">Email<label>
-                                <input type="text" name="email" placeholder="Email"
-                                    class=" border w-full h-5 px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-1 focus:ring-indigo-600 rounded-md">
-                                <label class="block mt-3 font-semibold">Password<label>
-                                        <input type="password" name="password" placeholder="Password"
-                                            class=" border w-full h-5 px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-1 focus:ring-indigo-600 rounded-md">
-                                        <div class="flex justify-between items-baseline">
-                                            <button
-                                                class="m-2 bg-violet-600 text-white py-2 px-6 rounded-lg">Register</button>
-                                            <button class="m-2 bg-emerald-500 text-white py-2 px-6 rounded-lg"><a
-                                                    href="{{ route('login') }}">Login</a></button>
+                        <input type="text" name="name" placeholder="name" class=" border w-full h-5 px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-1 focus:ring-indigo-600 rounded-md">
+                        
+                        @error('name')
+                            <p class="border border-red-500 rounded-md bg-red-100 w-full text-red-600 p-2 my-2">* {{$message}} </p>
+                        @enderror
 
-                                            <a href="#" class="text-sm hover:underline">Forgot password?</a>
-                                        </div>
+                        <label class="block font-semibold">Email<label>
+                        <input type="text" name="email" placeholder="Email" class=" border w-full h-5 px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-1 focus:ring-indigo-600 rounded-md">
+                       
+                        @error('email')
+                        <p class="border border-red-500 rounded-md bg-red-100 w-full text-red-600 p-2 my-2">* {{$message}} </p>
+                        @enderror
+
+                        <label class="block mt-3 font-semibold">Password<label>
+                        <input type="password" name="password" placeholder="Password" class=" border w-full h-5 px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-1 focus:ring-indigo-600 rounded-md">
+                        
+                                 
+                        @error('password')
+                            <p class="border border-red-500 rounded-md bg-red-100 w-full text-red-600 p-2 my-2">* {{$message}} </p>
+                        @enderror
+
+
+                        <div class="flex justify-between items-baseline">
+                            <button class="m-2 bg-violet-600 text-white py-2 px-6 rounded-lg">Register</button>
+                            <button class="m-2 bg-emerald-500 text-white py-2 px-6 rounded-lg"><a href="{{ route('login') }}">Login</a></button>
+                            <a href="#" class="text-sm hover:underline">Forgot password?</a>
+                        </div>
 
                     </div>
                 </div>

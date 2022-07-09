@@ -16,7 +16,7 @@
                         <input type="password" placeholder="Password" name="password" class=" border w-full h-5 px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-1 focus:ring-indigo-600 rounded-md">
 
                         @error('message')
-                            <p class="border border-red-500 rounded-md bg-red-100 w-full text-red-600 p-2 my-2">* Error failed to login </p>
+                            <p class="border border-red-500 rounded-md bg-red-100 w-full text-red-600 p-2 my-2">* {{$message}} </p>
                         @enderror
 
                         <div class="flex justify-between items-baseline">

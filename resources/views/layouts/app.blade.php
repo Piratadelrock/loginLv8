@@ -26,9 +26,7 @@
             <a class="rounded-lg px-3 py-2 text-cyan-50 font-medium hover:bg-slate-100 hover:text-slate-900"
                 href="{{ route('register.index') }}">Register</a>
         @endif
-        
     </nav>
-
 
     @yield('content')
 

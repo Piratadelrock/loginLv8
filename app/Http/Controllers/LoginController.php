@@ -19,13 +19,12 @@ class LoginController extends Controller
             ]);
 
         }
-        return redirect()->route('login');
+        return redirect()->route('/');
     }
 
     public function destroy(){
         auth()->logout();
         return redirect()->route('login');
-        // return redirect()->to('login');
     }
 
 
